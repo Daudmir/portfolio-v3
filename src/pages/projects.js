@@ -9,7 +9,6 @@ import { useRef } from "react";
 import proj1 from "../../public/images/projects/erp-gruppen.png";
 import proj2 from "../../public/images/projects/futureworld.png";
 import proj3 from "../../public/images/projects/unvoit.png";
-import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";

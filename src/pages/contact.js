@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useRouter } from "next/router";
 

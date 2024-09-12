@@ -8,7 +8,6 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
-import { HireMe2 } from "@/components/HireMe2";
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
