@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/Riley.png";
+import profile from "../../public/images/profile/mig.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
@@ -38,10 +38,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About NexTemp</title>
+        <title>About</title>
         <meta
           name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
+          content="About Daud Mir"
         />
       </Head>
 
@@ -50,10 +50,21 @@ export default function About() {
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-          <AnimatedText
-            text="Let Passion Lead Your Purpose 🔥"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
-          />
+        <AnimatedText
+          textParts={[
+            {
+              text: "Daud Khalid Mir",
+              className: "", 
+            },
+            {
+              text: "Bachelor's Degree in Web Development, Major in Programmering Web Applications🔥",
+              className: "font-normal text-2xl mt-4", 
+            },
+          ]}
+          className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+        />
+
+
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div
@@ -64,27 +75,19 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                I'm Riley, a dedicated web developer at Stellar Innovations,
-                where I specialize in creating dynamic and user-centric web
-                experiences. With over a decade of experience in the industry, I
-                have honed my skills in both front-end and back-end
-                technologies, allowing me to deliver responsive and
-                high-performance websites and applications.
+              I am a highly skilled professional with a passion for project management and collaboration. 
+              With a diverse background in various industries, including IT and marketing, 
+              I have gained extensive experience in delivering successful projects that exceed client expectations. 
+              My expertise lies in leading cross-functional teams, developing strategic plans, and executing projects with precision. 
+              I am adept at analyzing requirements, identifying risks, and implementing effective solutions to drive project success. 
+            
               </p>
               <p className="my-4 font-medium">
-                At Stellar Innovations, I've had the opportunity to work on
-                numerous high-profile projects that have challenged and expanded
-                my expertise. My technical skill set includes HTML, CSS,
-                JavaScript, React, and Node.js, among other technologies. One of
-                my notable projects involved developing a comprehensive
-                e-commerce platform that streamlined the user experience and
-                significantly boosted the client's sales. Another project I’m
-                particularly proud of was creating an interactive web
-                application for a major event, which received widespread acclaim
-                for its intuitive design and seamless performance.
-              </p>
-              <p className="my-4 font-medium">
-                P.s I'm a big fan of anime and not a real person ✌️.
+              Throughout my career, I have demonstrated strong communication and interpersonal skills, fostering positive relationships with stakeholders and team members. 
+              I thrive in fast-paced environments and excel at managing competing priorities to deliver projects on time and within budget. 
+              I am constantly seeking opportunities to learn and grow, staying up-to-date with industry trends and adopting innovative tools and methodologies. 
+              I am committed to delivering exceptional results and driving continuous improvement in project management practices. 
+              Please feel free to explore my portfolio to see some of my notable projects. You can also download my CV to learn more about my professional experience and qualifications.
               </p>
             </div>
             <div
@@ -114,41 +117,40 @@ export default function About() {
             >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={1461} />+
+                  <AnimatedNumberFramerMotion value={25} />
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Days of Coding
+                  Years old
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={500} />
+                  <AnimatedNumberFramerMotion value={100} />%
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Made
+                  Efficient
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={499} />
+                  <AnimatedNumberFramerMotion value={1000} />%
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Crushed
+                  Fun
                 </h3>
               </div>
             </div>
-            <HireMe2 />
           </div>
 
           <Skills />

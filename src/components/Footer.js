@@ -17,10 +17,10 @@ const Footer = () => {
           {""}
           by&nbsp;
           <Link
-            href="https://travislord.xyz/"
+            href="https://www.linkedin.com/in/daud-mir-314bb6220/"
             className="underline underline-offset-2"
           >
-            Travis Lord
+            Daud Khalid Mir
           </Link>
         </div>
       </Layout>

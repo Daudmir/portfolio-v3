@@ -45,16 +45,35 @@ const Skills = () => {
         </motion.div>
 
         <Skill name="HTML" x="-20vw" y="2vw" />
-        <Skill name="Tailwind" x="-5vw" y="-10vw" />
-        <Skill name="JavaScript" x="20vw" y="6vw" />
-        <Skill name="TypeScript" x="0vw" y="12vw" />
-        <Skill name="Next.js" x="-20vw" y="-15vw" />
-        <Skill name="Gatsby" x="15vw" y="-12vw" />
-        <Skill name="Git" x="-35vw" y="-5vw" />
-        <Skill name="UI / UX" x="32vw" y="-5vw" />
-        <Skill name="Node.js" x="0vw" y="-20vw" />
-        <Skill name="React" x="-25vw" y="18vw" />
-        <Skill name="Framer Motion" x="28vw" y="18vw" />
+        <Skill name="CSS" x="-5vw" y="-10vw" />
+        <Skill name="SCSS" x="20vw" y="6vw" />
+        <Skill name="Javascript" x="0vw" y="12vw" />
+        <Skill name="Vue.js" x="-18vw" y="-15vw" />
+        <Skill name="React.js" x="18vw" y="-12vw" />
+        <Skill name="Gatsby" x="-30vw" y="-5vw" />
+        <Skill name="TailwindCSS" x="25vw" y="-5vw" />
+        <Skill name="AOS" x="0vw" y="-18vw" />
+        <Skill name="Wordpress" x="-25vw" y="15vw" />
+        <Skill name="PHP" x="-30vw" y="20vw" />
+        <Skill name="Next.js" x="30vw" y="18vw" />
+        <Skill name="Bootstrap" x="35vw" y="12vw" />
+        <Skill name="Material UI" x="-35vw" y="10vw" />
+        <Skill name="Angular" x="28vw" y="25vw" />
+        <Skill name="Ionic" x="-20vw" y="22vw" />
+        <Skill name="Netlify" x="10vw" y="25vw" />
+        <Skill name="Auth0" x="-5vw" y="30vw" />
+        <Skill name="Styled Components" x="10vw" y="-32vw" />
+        <Skill name="Vercel" x="-25vw" y="-25vw" />
+        <Skill name="Github" x="25vw" y="-20vw" />
+        <Skill name="VSCode" x="10vw" y="-22vw" />
+        <Skill name="UI/UX" x="-15vw" y="28vw" />
+        <Skill name="SEO" x="-10vw" y="-28vw" />
+        <Skill name="SoMe" x="15vw" y="15vw" />
+        <Skill name="Adobe XD" x="-18vw" y="-20vw" />
+        <Skill name="Figma" x="20vw" y="-15vw" />
+
+
+
       </div>
     </>
   );

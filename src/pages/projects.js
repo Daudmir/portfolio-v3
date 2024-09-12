@@ -5,9 +5,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { HireMe2 } from "@/components/HireMe2";
 
-import proj1 from "../../public/images/projects/clay-theme.png";
+import proj1 from "../../public/images/projects/erp-gruppen.png";
+import proj2 from "../../public/images/projects/futureworld.png";
+import proj3 from "../../public/images/projects/unvoit.png";
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import TransitionEffect from "@/components/TransitionEffect";
@@ -165,7 +166,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
   );
 };
 
-const Project = ({ title, type, img, link, tools }) => {
+const Project = ({ title, type, img, link, tools, summary, github }) => {
   return (
     <article
       className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
@@ -186,7 +187,7 @@ const Project = ({ title, type, img, link, tools }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="h-auto w-full"
+          className="h-[auto] w-full"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           sizes="(max-width: 768px) 100vw,
@@ -206,8 +207,19 @@ const Project = ({ title, type, img, link, tools }) => {
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
             {title}
           </h2>
+          <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         </Link>
-        <div className="flex w-full items-center  justify-between">
+        <div className="flex w-full items-center gap-4">
+        <Link
+            href={github}
+            target={"_blank"}
+            className="w-10"
+            aria-label="github link"
+          >
+            <GithubIcon />
+          </Link>
           <Link
             href={link}
             className="rounded-lg
@@ -251,75 +263,36 @@ export default function Projects() {
             <div className="col-span-12">
               <FeaturedProject
                 type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
+                tools="Next.js | Tailwind CSS | JavaScript"
+                title="ERP Gruppen"
+                summary="In this project I worked with ERPGruppen to make a informative website, to showcase what they can offer to their customers. Made with Next.js..."
                 img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                link="/projects/erp"
+                github="https://github.com/Daudmir/erp-gruppen-landingpage"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                tools="HTML | SCSS | TypeScript | Angular | Ionic"
+                title="FutureWorld"
+                summary="FutureWorld is a website were you can learn all about the sustainable development goals. Made with Angular & Ionic..."
+                img={proj2}
+                link="/projects/futureworld"
+                github="https://github.com/Daudmir/futureworld"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                tools="VueJS | Tailwind CSS | JavaScript"
+                title="Unvoit"
+                summary="Unvoit is a business based invoice management web application developed using the framework Vue.js ..."
+                img={proj3}
+                link="/projects/unvoit"
+                github="https://github.com/Daudmir/unvoit"
               />
             </div>
-          </div>
-
-          <div>
-            <ul className="flex flex-col items-center relative pt-16">
-              <Article
-                title="Adding more soon, thanks for the interest!"
-                img={loading}
-                time="1 min read"
-                date=""
-                link="https://github.com/lilxyzz/"
-              />
-            </ul>
-
-            <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
-              <Link
-                href="/articles/"
-                target={"_self"}
-                className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
-            capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
-            dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
-            md:p-2 md:px-4 md:text-base
-             `}
-              >
-                View Articles
-              </Link>
-              <Link
-                href="/about/"
-                target={"_self"}
-                className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-             `}
-              >
-                Get To Know Me
-              </Link>
-            </div>
-            <HireMe2 />
           </div>
         </Layout>
       </main>

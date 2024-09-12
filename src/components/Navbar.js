@@ -110,7 +110,7 @@ const Navbar = () => {
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
           <CustomLink className="mx-4" href="/projects" title="Projects" />
-          <CustomLink className="ml-4" href="/articles" title="Articles" />
+          <CustomLink className="ml-4" href="/contact" title="Contact" />
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -118,8 +118,19 @@ const Navbar = () => {
         >
           <motion.a
             target={"_blank"}
+            className="w-7 mr-16 mx-3 rounded-full"
+            href="https://www.canva.com/design/DAFQ_w4BxKg/zMkYdOB3qa3dq0I_YG5DJg/view?utm_content=DAFQ_w4BxKg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my Resume"
+          >
+            Resume
+          </motion.a>
+
+          <motion.a
+            target={"_blank"}
             className="w-7 mr-3"
-            href="https://github.com/lilxyzz"
+            href="https://github.com/Daudmir"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my GitHub profile"
@@ -130,33 +141,14 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-7 mx-3 bg-light rounded-full"
-            href="https://medium.com/@travis.lord"
+            href="https://www.linkedin.com/in/daud-mir-314bb6220/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Medium profile"
+            aria-label="Checkout my LinkedIn profile"
           >
-            <MediumIcon />
+            <LinkedInIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Dev.to profile"
-          >
-            <DevIcon />
-          </motion.a>
-
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="My Dev.to profile"
-          ></motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -204,15 +196,16 @@ const Navbar = () => {
             <CustomMobileLink
               toggle={handleClick}
               className="ml-4 lg:m-0 lg:my-2"
-              href="/articles"
-              title="Articles"
-            />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="ml-4 lg:m-0 lg:my-2"
               href="/contact"
               title="Contact"
             />
+            <motion.a
+              className="ml-4 lg:m-0 lg:my-2 text-light dark:text-black"
+              href="https://www.canva.com/design/DAFQ_w4BxKg/zMkYdOB3qa3dq0I_YG5DJg/view?utm_content=DAFQ_w4BxKg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              aria-label="Checkout my Github profile"
+            >
+              Resume
+            </motion.a>
           </nav>
           <nav
             className="flex items-center justify-center  mt-2
@@ -221,7 +214,7 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mr-3"
-              href="https://github.com/lilxyzz"
+              href="https://github.com/Daudmir"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my Github profile"
@@ -232,31 +225,13 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full"
-              href="https://medium.com/@travis.lord"
+              href="https://www.linkedin.com/in/daud-mir-314bb6220/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Medium profile"
+              aria-label="Checkout my LinkedIn profile"
             >
-              <MediumIcon />
+              <LinkedInIcon />
             </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Dev.to profile"
-            >
-              <DevIcon />
-            </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="My Dev.to profile"
-            ></motion.a>
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}

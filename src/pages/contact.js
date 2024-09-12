@@ -48,10 +48,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>NexTemp Built with Nextjs</title>
+        <title>Contact</title>
         <meta
           name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
+          content="Contact"
         />
       </Head>
 
@@ -60,11 +60,6 @@ export default function About() {
         className={`flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-          <AnimatedText
-            text="Begin Today,
-I'm One Message Away 👋"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
-          />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 relative flex w-full flex-col items-center justify-center rounded-2xl rounded-br-2xl border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4">
             <div className="absolute top-0 -right-5 -z-10 h-[103%] w-[101.5%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -75,9 +70,7 @@ I'm One Message Away 👋"
 
               <div className="w-full"></div>
               <p className="">
-                My inbox is always open. Whether you have a question or just
-                want to say hello, I'll try my best to get back to you! Feel
-                free to message me about any relevant project updates.
+              I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out! I'll do my best to get back to you promptly. Looking forward to hearing from you!
               </p>
             </div>
             <div className="relative col-span-4 h-max xl:col-span-4 md:col-span-8 md:order-2">
@@ -145,13 +138,14 @@ I'm One Message Away 👋"
                     </div>
 
                     <div className="col-span-1 p-2">
-                      <button
-                        type="submit"
+                      <a
+                        href="mailto:daudm.dev@gmail.com"  
                         className="px-4 py-2 font-bold capitalize text-light bg-dark border border-2 border-solid border-dark dark:border-light dark:bg-light rounded-md hover:bg-transparent hover:text-dark dark:hover:text-light dark:hover:bg-dark dark:hover:border-light dark:hover:bg-dark dark:text-dark dark:hover:text-light"
                       >
                         Send it!
-                      </button>
+                      </a>
                     </div>
+
                   </form>
                 </div>
               </div>
