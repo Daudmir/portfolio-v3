@@ -9,6 +9,7 @@ import { useRef } from "react";
 import proj1 from "../../public/images/projects/erp-gruppen.png";
 import proj2 from "../../public/images/projects/futureworld.png";
 import proj3 from "../../public/images/projects/unvoit.png";
+import proj4 from "../../public/images/projects/esportligaen.png";
 
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";
@@ -139,14 +140,16 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <Link
-            href={github}
-            target={"_blank"}
-            className="w-10"
-            aria-label="github link"
-          >
-            <GithubIcon />
-          </Link>
+          {github && (
+            <Link
+              href={github}
+              target={"_blank"}
+              className="w-10"
+              aria-label="github link"
+            >
+              <GithubIcon />
+            </Link>
+          )}
           <Link
             href={link}
             className="ml-4 rounded-lg
@@ -242,10 +245,10 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | By NexTemp</title>
+        <title>Projects | By Daud Mir</title>
         <meta
           name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
+          content="Daud Mir, A open-source portfolio theme built with Nextjs"
         />
       </Head>
 
@@ -259,6 +262,16 @@ export default function Projects() {
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Design & Development"
+                tools="Wordpress | PHP | JavaScript | SASS"
+                title="Esportligaen"
+                summary="In this project I worked with Esportligaen to create an engaging website that presents their esports leagues and community. Built with WordPress, PHP, SASS, and JavaScript..."
+                img={proj4}
+                link="/projects/esportligaen"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Design & Development"
